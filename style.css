@@ -1,0 +1,295 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("background-picture.jpg"),
+    -webkit-linear-gradient(left, #c5e5e0 0%, #ffc5c1 100%);
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 100%;
+  border-radius: 20px;
+  background: #f8f8f8;
+  padding: 1em;
+}
+h3 {
+  color: black;
+  font-size: 2em;
+}
+
+h2:hover ~ div[id="sign"],
+h2:hover ~ div[id="log"],
+h2:hover ~ div[id="res"] {
+  left: -500px;
+}
+#signup,
+#login,
+#reset {
+  z-index: 50;
+  right: 120px;
+  position: absolute;
+}
+#login {
+  z-index: 40;
+  top: 100px;
+}
+#reset {
+  z-index: 30;
+  top: 200px;
+}
+form {
+  width: 300px;
+  color: #f2f2f2;
+  padding: 1em 2em;
+  position: relative;
+}
+h2 ~ div {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+p {
+  color: grey;
+}
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1.2em;
+}
+.container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+h1 {
+  position: absolute;
+  left: 10px;
+  font-size: 5em;
+  margin-top: 200px;
+  color: #f2f2f2;
+}
+h2:hover ~ div,
+h2:hover ~ div > div > img {
+  transition: visibility 3s linear, opacity 1s linear;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  left: 150px;
+  top: 35px;
+}
+div[id="signup"]:hover ~ div,
+div[id="login"]:hover ~ div {
+  visibility: hidden;
+}
+h2:hover ~ div > div > img {
+  left: 250px;
+  top: 35px;
+  opacity: 0.3;
+}
+h2 {
+  position: relative;
+  left: 250px;
+  margin: 0;
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 40px;
+  font-weight: lighter;
+  max-width: 100px;
+  padding: 18px;
+  letter-spacing: 5px;
+}
+input {
+  border-radius: 50px 20px 20px 50px;
+  background: #f8f8f8;
+  width: 100%;
+  margin: 1px 0;
+  font-size: 12px;
+  padding: 4% 7%;
+  border: none;
+  padding: 0 auto;
+}
+button {
+  color: #808080;
+  font-size: 20px;
+  border-radius: 50px 20px 20px 50px;
+  background: -webkit-linear-gradient(left, #ffc5c1 0%, #c5e5e0 100%);
+  width: 100%;
+  margin: 2%;
+  border: none;
+  padding: 4% 10%;
+}
+
+@media screen and (max-width: 730px) and (min-width: 600px) {
+  h2 {
+    color: white;
+  }
+  #signup {
+    right: 520px;
+  }
+  h2:hover ~ div[id="res"] {
+    left: 10px;
+  }
+  #login {
+    top: 0;
+    right: 300px;
+  }
+  #reset {
+    top: 0;
+    right: 100px;
+  }
+
+  h2:hover ~ div,
+  h2:hover ~ div > div > img {
+    left: 250px;
+    top: 65px;
+  }
+  .inner {
+    border-radius: 20px;
+    background: #f8f8f8;
+    padding: 2em;
+  }
+  h2:hover ~ div > div > img {
+    left: 200px;
+    top: 35px;
+    opacity: 0.3;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 601px) and (min-width: 450px) {
+  h2 {
+    color: white;
+    font-size: 25px;
+  }
+  #signup {
+    right: 350px;
+  }
+  #login {
+    top: 0;
+    right: 170px;
+  }
+  #reset {
+    top: 0;
+    right: 50px;
+  }
+
+  h2:hover ~ div,
+  h2:hover ~ div > div > img {
+    left: 250px;
+    top: 65px;
+  }
+  .inner {
+    border-radius: 20px;
+    background: #f8f8f8;
+    padding: 2em;
+  }
+  h2:hover ~ div > div > img {
+    left: 200px;
+    top: 35px;
+    opacity: 0.3;
+  }
+  h2:hover ~ div[id="res"] {
+    left: 10px;
+  }
+  h2:hover ~ div[id="log"] {
+    left: 150px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 451px) and (min-width: 376px) {
+  h2 {
+    color: white;
+    font-size: 25px;
+  }
+  #signup {
+    right: 300px;
+  }
+  #login {
+    top: 0;
+    right: 170px;
+  }
+  #reset {
+    top: 0;
+    right: 50px;
+  }
+
+  h2:hover ~ div,
+  h2:hover ~ div > div > img {
+    left: 250px;
+    top: 65px;
+  }
+  .inner {
+    border-radius: 20px;
+    background: #f8f8f8;
+    padding: 2em;
+  }
+  h2:hover ~ div > div > img {
+    left: 200px;
+    top: 35px;
+    opacity: 0.3;
+  }
+
+  h2:hover ~ div[id="log"] {
+    left: 180px;
+  }
+
+  h2:hover ~ div[id="res"] {
+    left: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    top: 100px;
+    color: white;
+    font-size: 25px;
+  }
+
+  #signup {
+    top: -100px;
+    right: 250px;
+  }
+  #login {
+    top: -100px;
+    right: 120px;
+  }
+  #reset {
+    top: -100px;
+    right: 10px;
+  }
+  h2:hover ~ div[id="sign"] {
+    left: 220px;
+  }
+
+  h2:hover ~ div,
+  h2:hover ~ div > div > img {
+    left: 100px;
+    top: 120px;
+  }
+
+  .inner {
+    position: relative;
+    border-radius: 20px;
+    background: #f8f8f8;
+    padding: 2em;
+  }
+  h2:hover ~ div > div > img {
+    left: 200px;
+    top: 35px;
+    opacity: 0.3;
+  }
+  p {
+    font-size: 12px;
+  }
+}
